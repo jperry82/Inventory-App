@@ -1,72 +1,33 @@
 # Inventory Management System
 
-The Inventory Management System is an Android application designed to help users efficiently track, manage, and organize their inventory items. The app is particularly useful for small business owners, warehouse managers, and individuals who want to keep their stock levels in check. It also offers the option to receive SMS notifications for low inventory levels, ensuring you never run out of essential items.
+## Project Overview
 
-## Features
+### App Requirements and Goals
+The Inventory Management System is an Android application developed to streamline the process of tracking and managing inventory. The app was designed to meet the needs of small business owners, warehouse managers, and individuals who need an efficient way to monitor stock levels. The primary goal was to provide users with a simple yet powerful tool to add, update, and delete inventory items, while also enabling SMS notifications for low inventory alerts.
 
-- **User Authentication:** Secure login system with options for new users to create an account.
-- **Inventory Management:** Easily add, update, and delete inventory items.
-- **Adjust Quantity:** Modify the quantity of existing items directly within the app.
-- **SMS Notifications:** Enable or disable SMS alerts for low inventory levels based on user preference.
-- **User-Friendly Interface:** Simple and intuitive design that follows Android Material Design principles.
+### User Needs and UI Design
+To create a user-centered experience, the app's design focused on ease of use and accessibility. The main screens include a login screen, an inventory management screen, and an SMS permissions screen. Key features were carefully selected to address user needs:
+- **Login Screen:** Secure user authentication, with easy account creation for new users.
+- **Inventory Management Screen:** A clean and intuitive interface to add, update, or delete inventory items and adjust quantities.
+- **SMS Permissions Screen:** A straightforward option to enable or disable SMS notifications based on user preferences.
 
-## Installation
+The UI designs were successful because they kept the user at the forefront. The app’s layout followed Android Material Design guidelines, ensuring familiarity and ease of navigation. Elements like buttons and text fields were sized appropriately and labeled clearly, reducing the learning curve and making the app accessible to users of all experience levels.
 
-### Prerequisites
+### Approach to Coding and Development
+The coding process for this app was methodical and strategic. I started by defining the core functionalities and breaking them down into manageable components. The Model-View-Controller (MVC) design pattern was employed to separate the logic, UI, and data management, making the code more maintainable and scalable. Reusability was a key focus, with modular functions and classes that could be adapted for future projects.
 
-- Android Studio installed on your system.
-- An Android device or emulator running Android 5.0 (Lollipop) or higher.
+These techniques, particularly the use of the MVC pattern, can be applied to future projects to improve code clarity and facilitate collaboration. This approach not only helps in managing complexity but also speeds up debugging and testing processes.
 
-### Steps
+### Testing and Debugging
+To ensure the app’s functionality, I implemented a rigorous testing process. This included:
+- **Unit Testing:** Testing individual functions and components to ensure they perform as expected.
+- **Integration Testing:** Verifying that different parts of the app work together smoothly.
+- **User Testing:** Gathering feedback from beta users to identify usability issues and potential bugs.
 
-1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/yourusername/inventory-management-system.git
-   ```
-2. **Open the Project:**
-   - Open Android Studio.
-   - Choose "Open an existing Android Studio project" and select the cloned repository.
+This process was critical in revealing edge cases, such as handling invalid inputs or managing permissions for SMS. Thorough testing ensured that the app was robust, reliable, and provided a seamless user experience.
 
-3. **Build and Run:**
-   - Connect your Android device via USB or use an emulator.
-   - Click `Run` or press `Shift + F10` in Android Studio to build and launch the app.
+### Overcoming Challenges
+One of the key challenges was implementing the SMS notification feature in a way that was both user-friendly and compliant with Android’s permission requirements. The solution involved creating a dynamic toggle within the app that allowed users to enable or disable SMS notifications based on their preferences, with the UI adjusting accordingly. This required innovative thinking to manage permissions without compromising user experience.
 
-## Usage
-
-1. **Login:** Use your credentials to log in. If you don’t have an account, you can create one.
-2. **Manage Inventory:** 
-   - Add new items by tapping the "Add Item" button.
-   - Adjust quantities or delete items as needed using the "Adjust Qty" button.
-3. **Enable/Disable SMS Notifications:** Toggle SMS notifications through the "Enable/Disable SMS" button for low stock alerts.
-
-## Permissions
-
-The app requires the following permissions:
-
-- **SEND_SMS:** To send SMS notifications for low inventory alerts.
-- **INTERNET:** For potential future updates involving cloud sync (not currently implemented).
-- **READ_EXTERNAL_STORAGE/WRITE_EXTERNAL_STORAGE:** For backup and restore features (if implemented in future updates).
-
-## Supported Platforms
-
-- Android 5.0 (Lollipop, API level 21) and above.
-
-## Contributing
-
-We welcome contributions from the community! If you would like to contribute:
-
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix.
-   ```bash
-   git checkout -b feature-or-bugfix-branch
-   ```
-3. Commit your changes and push them to your forked repository.
-4. Create a pull request explaining your changes.
-
-## License
-
-This project is not licensed.
-
-## Contact
-
-For any inquiries or feedback, please contact jperry204@gmail.com
+### Highlighted Success
+The inventory management component of the app is where I particularly demonstrated my knowledge, skills, and experience. By developing a dynamic and responsive grid layout for managing inventory items, and incorporating features like quantity adjustment and real-time updates, I ensured the app met the core needs of its users. The combination of a clean UI and robust backend code made this component particularly successful.
